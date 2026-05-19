@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-risk-critical: #ef4444;
+  --color-risk-high: #f97316;
+  --color-risk-medium: #f59e0b;
+  --color-risk-low: #10b981;
+  --color-risk-safe: #22c55e;
+  --color-navy: #0f172a;
+  --color-slate-nav: #1e293b;
+  --shadow-soft: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-soft;
+  }
+  
+  .badge {
+    @apply px-2 py-0.5 rounded-full text-xs font-medium inline-flex items-center;
+  }
+  
+  .badge-critical { @apply bg-red-100 text-red-700 border border-red-200; }
+  .badge-high { @apply bg-orange-100 text-orange-700 border border-orange-200; }
+  .badge-medium { @apply bg-amber-100 text-amber-700 border border-amber-200; }
+  .badge-low { @apply bg-emerald-100 text-emerald-700 border border-emerald-200; }
+}
+
+/* Custom styles for the graph placeholder */
+.graph-canvas {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
