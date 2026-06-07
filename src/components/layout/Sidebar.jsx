@@ -9,7 +9,8 @@ import {
   Settings, 
   Shield,
   LogOut,
-  User
+  User,
+  Users
 } from 'lucide-react';
 
 const navItems = [
@@ -17,6 +18,7 @@ const navItems = [
   { name: 'My Identity', icon: Network, path: '/graph-explorer' },
   { name: 'Alerts', icon: Bell, path: '/alerts', badge: 2 },
   { name: 'Security Scan', icon: ScanLine, path: '/simulator' },
+  { name: 'Family Shield', icon: Users, path: '/family-shield' },
   { name: 'Settings', icon: Settings, path: '/settings' },
 ];
 
